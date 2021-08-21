@@ -1,0 +1,14 @@
+while true; do
+    exec "/home/alialucas7/.scripts/dwm/barupdate.sh"
+#   xsetroot -name "$( date "+hora: %R" )"    
+   sleep 1s    
+done &
+
+exec dunst & xcompmgr -c & dwm |  nitrogen --restore
+
+
+
+# & compton 
+# & xcompmgr -c &
+#sleep 1s
+
