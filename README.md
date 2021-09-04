@@ -1,2 +1,3 @@
 # DWM_Scripts
-My noob scripts. Things can definitely be done better ;)
+En la carpeta del usuario ~/.scripts/dwm/
+

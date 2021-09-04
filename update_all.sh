@@ -4,11 +4,11 @@ function run_update {
 #	volume_string="$(cat /home/alialucas7/.scripts/dwm/savedata/volume_string.txt)"
 	battery_string="$(cat /home/alialucas7/.scripts/dwm/savedata/battery_string.txt)"
 	#internet_status_string="$(cat /home/alialucas7/.scripts/dwm/savedata/internet_status_string.txt)"
-#	bright_string="$(cat /home/alialucas7/.scripts/dwm/savedata/brightness_string.txt)"
+	bright_string="$(cat /home/alialucas7/.scripts/dwm/savedata/brightness_string.txt)"
 	#weather_string="$(cat /home/alialucas7/.scripts/dwm/savedata/weather_string.txt)"
 	#disk_use_string="$(cat /home/alialucas7/.scripts/dwm/savedata/disk_use_string.txt)"
 	#cpu_string="$(cat /home/alialucas7/.scripts/dwm/savedata/cpu_string.txt)"
-	final_string="$battery_string|$date_string"
+	final_string="$bright_string|$battery_string|$date_string"
 	#$weather_string|$disk_use_string|$internet_status_string||$date_string"
 	compare_string="$(cat /home/alialucas7/.scripts/dwm/savedata/final_string.txt)"
 	#only update the gui when a new string is made
