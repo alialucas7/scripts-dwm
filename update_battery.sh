@@ -3,7 +3,9 @@ function battery_update {
 	# 0-10   , 11-30   , 31-50   , 51-75   , 76-100 
 	# Discharging     Charging     Full  
 	#switch battery icon depending on battery level
-	if ((battery_level >= 0 && battery_level <= 10)); then
+	if (battery_level <= 0); then
+		battery_string=""
+	elif ((battery_level > 0 && battery_level <= 10)); then
 		battery_string= ""
 		notify-send "Bateria Baja"
 	elif ((battery_level >= 11 && battery_level <= 30)); then
